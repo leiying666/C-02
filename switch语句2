@@ -1,0 +1,26 @@
+switch语句的特殊情况（输入一定范围内的数要得出一个结果时的境况）
+#include<stdio.h>
+int main()
+{
+	int day = 0;
+	scanf_s("%d", &day);
+	switch (day)
+	{
+		case 1:
+    case 2:
+		case 3:
+    case 4:
+    case 5:
+    printf("工作日");
+    break;
+    case 6:
+		case 7:
+		printf("休息日");
+		break;
+		default :
+		printf("输入错误");
+		break;
+
+	}
+	return 0;
+}

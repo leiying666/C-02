@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int day = 0;
+	scanf_s("%d", &day);
+	switch (day)
+	{
+		case 1:
+		printf("星期一");
+		break;
+	    case 2:
+		printf("星期二");
+		break;
+		case 3:
+		printf("星期三");
+		break;
+  //依次类推
+		case 7:
+		printf("星期天");
+		break;
+		default ://注意为冒号；
+		printf("输入错误");
+		break;//最好加break，可以不加，为了以后敲代码不会出错
+
+	}
+	return 0;
+}

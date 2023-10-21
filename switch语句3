@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int n = 1;
+	int m = 2;
+	switch (n)
+	{
+	case 1://注意:写代码时case的后面跟的是冒号，单独成行，C语言敲代码最好一行就最后用一个下标点结尾，像case 1:m++;一般会忘加；
+		m++;
+	case 2:
+		n++;
+	case 3:
+		switch (n)
+		{//允许switch镶嵌使用
+		    case 1:
+			    n++;
+			case 2:
+				m++;
+				n++;
+				break;
+		}
+	case 4:
+		m++;
+		break;
+	default:
+		break;
+
+	}
+	printf("m=%d,n=%d", m, n);
+	return 0;
+}
